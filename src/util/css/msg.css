@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+
+
+
+details div {
+    border-radius:50px;
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+
+    border:none;
+    border-bottom: .5px dashed rgba(0,0,0,.5);
+    border-left: .5px dotted rgba(0,0,0,.5);
+    padding: 1.5em;
+    background-color: rgba(0,0,0,.3);
+
+}
+
+details div > * + * {
+    margin-top: 1.5em;
+}
+
+details {
+    margin:15px 5px;
+    width: 90%;
+    height: 90%;
+    max-width: 600px;
+    max-height: 200px;
+    overflow: hidden;
+    word-break:break-all;
+    border-radius:50px;
+}
+.other-usr{
+    float: right;
+}
+.cli-usr{
+    float: left;
+}
+
+
+
+
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary {
+    display:flex;
+    justify-content:space-around;
+    list-style: none;
+    border:.1px solid rgba(0,0,0,.3);
+    border-radius:50px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+    padding: .45em 1em;
+    cursor: pointer;
+    position: relative;
+    padding-left: calc(1.75rem + .75rem + .75rem);
+}
+
+summary.cli-usr-header:before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1.75rem;
+    content: url('../imgs/logo.png');
+    transform:scale(.02) ;
+    width: 10px;
+    height: 10px;
+    color: #FFF;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    text-align:left;
+}
+summary.other-usr-header:before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1.75rem;
+    content: url('../imgs/logo.png');
+    transform:scale(.02) ;
+    width: 10px;
+    height: 10px;
+    color: #FFF;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+
+
+
+summary small{
+  font-size:10px;
+}
+
+details[open] summary.other-usr-header {
+    background:rgba(250,0,0,.3);
+}
+details[open] summary.cli-usr-header {
+    background:rgba(0,0,139,.2);
+}
+
+details[close] summary.cli-usr-header {
+    border-radius:0px;
+
+}
+details[open] summary.cli-usr-header{
+}
+
+
+
+
+details[open] summary:before {
+content: url('../imgs/msg.png');
+    transform:scale(.5) ;
+}
+
+summary:hover {
+  transition:.5s ease-in-out;
+    box-shadow:0 0 10px darkblue;
+    filter:drop-shadow(2px 5px 3px darkblue);
+}
+
+a {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 1px 0 0;
+}
+
+a:hover {
+    box-shadow: 0 3px 0 0;
+}
+
+code {
+    font-family: monospace;
+    font-weight: 600;
+}

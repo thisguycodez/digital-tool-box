@@ -1,0 +1,252 @@
+.container-ipt {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+     -webkit-text-fill-color: azure;
+    color: azure;
+  text-align:center;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+
+
+.container-ipt p{
+    word-break:keep-all;
+}
+
+.ip-inps{
+    background: rgba(250,250,250,.2);
+    padding:4px 8px;
+    border-radius:10px;
+    font-weight:bolder;
+    margin: 5px 0;
+}
+
+.ip-btn{
+    background:rgba(0, 0, 0, .7);
+    border:solid 1px azure;
+    transition: .5s ease-in-out;
+}
+
+.ip-btn:hover{
+    background:rgba(250, 250, 250, .1);
+    border:solid 1px #000;
+}
+
+
+.ip-valid{
+    font-weight:bolder;
+    font-size:10px;
+ -webkit-text-fill-color: green;
+    color: green;
+
+}
+
+.ip-unvalid{
+    font-weight:bolder;
+    font-size:10px;
+ -webkit-text-fill-color: red;
+    color: red;
+
+}
+
+.ip-blox{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+}
+
+.ip-details1-ipt {
+    font-size: 13px;
+    font-weight: 500;
+   
+}
+
+.ip-details2-ipt {
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 6px;
+}
+
+.ip-details3-ipt {
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: 4px;
+}
+
+.ip-details4-ipt {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+
+/*switch animation styles , all sizes*/
+.switch {
+  font-size: 1rem;
+  position: relative;
+}
+.switch input {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  background: none;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  padding: 0;
+}
+.switch input + label {
+  position: relative;
+  min-width: calc(calc(2.375rem * .8) * 2);
+  border-radius: calc(2.375rem * .8);
+  height: calc(2.375rem * .8);
+  line-height: calc(2.375rem * .8);
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  vertical-align: middle;
+  text-indent: calc(calc(calc(2.375rem * .8) * 2) + .5rem);
+}
+.switch input + label::before,
+.switch input + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(calc(2.375rem * .8) * 2);
+  bottom: 0;
+  display: block;
+}
+.switch input + label::before {
+  right: 0;
+  background-color: #dee2e6;
+  border-radius: calc(2.375rem * .8);
+  transition: 0.2s all;
+}
+.switch input + label::after {
+  top: 2px;
+  left: 2px;
+  width: calc(calc(2.375rem * .8) - calc(2px * 2));
+  height: calc(calc(2.375rem * .8) - calc(2px * 2));
+  border-radius: 50%;
+  background-color: white;
+  transition: 0.2s all;
+}
+.switch input:checked + label::before {
+  background-color: #08d;
+}
+.switch input:checked + label::after {
+  margin-left: calc(2.375rem * .8);
+}
+.switch input:focus + label::before {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 136, 221, 0.25);
+}
+.switch input:disabled + label {
+  color: #868e96;
+  cursor: not-allowed;
+}
+.switch input:disabled + label::before {
+  background-color: #e9ecef;
+}
+.switch.switch-sm {
+  font-size: 0.875rem;
+}
+.switch.switch-sm input + label {
+  min-width: calc(calc(1.9375rem * .8) * 2);
+  height: calc(1.9375rem * .8);
+  line-height: calc(1.9375rem * .8);
+  text-indent: calc(calc(calc(1.9375rem * .8) * 2) + .5rem);
+}
+.switch.switch-sm input + label::before {
+  width: calc(calc(1.9375rem * .8) * 2);
+}
+.switch.switch-sm input + label::after {
+  width: calc(calc(1.9375rem * .8) - calc(2px * 2));
+  height: calc(calc(1.9375rem * .8) - calc(2px * 2));
+}
+.switch.switch-sm input:checked + label::after {
+  margin-left: calc(1.9375rem * .8);
+}
+.switch.switch-lg {
+  font-size: 1.25rem;
+}
+.switch.switch-lg input + label {
+  min-width: calc(calc(3rem * .8) * 2);
+  height: calc(3rem * .8);
+  line-height: calc(3rem * .8);
+  text-indent: calc(calc(calc(3rem * .8) * 2) + .5rem);
+}
+.switch.switch-lg input + label::before {
+  width: calc(calc(3rem * .8) * 2);
+}
+.switch.switch-lg input + label::after {
+  width: calc(calc(3rem * .8) - calc(2px * 2));
+  height: calc(calc(3rem * .8) - calc(2px * 2));
+}
+.switch.switch-lg input:checked + label::after {
+  margin-left: calc(3rem * .8);
+}
+.switch + .switch {
+  margin-left: 1rem;
+}
+
+
+.dropdown-menu {
+  margin-top: 0.75rem;
+}
+
+
+/*switch animation styles , all sizes*/
+
+
+
+
+
+
+
+/*EXTRA HELP FOR COMPONENTS BASED ON TOO MUCH DATA COMING IN*/
+
+
+
+
+.extrhlp{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*EXTRA HELP FOR COMPONENTS BASED ON TOO MUCH DATA COMING IN*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ONLY THINGS SMALL URL PAGE NEEDS*/
+
+.small_url_blx{
+  flex-direction: column;
+}
+
+
+.small_url_blx code{
+  -webkit-text-fill-color:red;
+}

@@ -1,0 +1,199 @@
+.tbnp{
+	position:relative;
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction: column;
+	align-items:flex-start;
+	justify-content: space-between;
+	grid-gap:10px;
+}
+
+.btn-success{
+	background:rgba(147, 250, 165,.2);
+}
+
+@keyframes spin{
+	from{
+		transform:rotateZ(0deg);
+	}
+
+	to{
+		transform:rotateZ(-1440deg);
+	}
+}
+
+
+.tbnp .lg-spn{
+	font-size: 4rem;
+	margin:20px;
+	transition:6s linear infinite;
+	animation:spin 6s linear infinite ;
+	-webkit-text-fill-color:azure;
+}
+
+
+.tbnp span{
+	-webkit-text-fill-color:azure;
+
+}
+
+.tbnp .np-content {
+	width:100%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	grid-gap:30px;
+}
+
+
+
+.tbnp .np-content .note_n_tab {
+	width:100%;
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	grid-gap:30px;
+	padding:5px;
+}
+
+.tbnp .np-content article{
+	width:100%;
+	max-width:600px;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	border: solid 1px rgba(250,250,250,0.4);
+	padding: 5px;
+	border-radius:5px;
+	margin: 15px 0px;
+	box-shadow:0 0 5px #000;
+}
+
+.note-header sub small code{
+display:none;
+
+}
+.tbnp .np-content article hr{
+border:solid 1px #000;
+-webkit-text-fill-color: #000;
+}
+
+.tbnp .np-content article :is(header,section){
+	-webkit-text-fill-color:azure;
+	height:100%;
+	width:100%;
+	display:flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin:5px 0px;
+
+}
+.tbnp .np-content article header h5{
+	border: none;
+	border-right:solid;
+	border-bottom:solid;
+	padding:10px 15px;
+	border-radius:10px;
+}
+.tbnp .np-content article section{
+	border: solid;
+	border-right:none;
+	padding:10px 15px;
+	border-radius:10px;
+	overflow:hidden;
+	overflow-y:scroll;
+	box-shadow:0 0 7px #000;
+}
+ 
+.tbnp .np-content i{
+	border-radius:50%;
+	height: 25px;
+	width: 25px;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	cursor:pointer;
+	padding:5px;
+	-webkit-text-fill-color:azure;
+	text-shadow:3px 5px 10px #000;
+}
+
+
+.tbnp .np-content i:hover{
+	-webkit-text-fill-color:rgba(250,250,250,.8);
+	text-shadow:0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*info card*/
+
+
+
+
+
+.info-card {
+    width: 300px;
+    border: none;
+    height: 240px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color:rgba(0,0,0,.3)
+}
+
+
+.info-card .img-npc{
+	justify-content:center;
+}
+
+
+.line {
+    color: #fff
+}
+
+
+
+@media screen and (max-width:950px){
+	.info-card{
+	display:none;
+
+}
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:1150px){
+
+
+.tbnp .np-content .note_n_tab {
+	justify-content: space-between;
+	grid-gap:30px;
+	padding:5px;
+}
+}
+
+
+
+
